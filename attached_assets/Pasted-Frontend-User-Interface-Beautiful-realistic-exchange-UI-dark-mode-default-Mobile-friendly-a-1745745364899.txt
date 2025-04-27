@@ -1,0 +1,117 @@
+Frontend (User Interface):
+
+Beautiful, realistic exchange UI (dark mode default).
+
+Mobile-friendly and Desktop-optimized.
+
+Pages:
+
+Home Page → Overview of the platform, not direct trading.
+
+Demo Spot Trading page:
+
+TradingView chart integration.
+
+Real-time market prices.
+
+Order Book (bids/asks updating live).
+
+Recent Trades (tape).
+
+Market Order, Limit Order, Stop-Limit Order placements.
+
+Open Orders, Order History, Trade History tabs.
+
+Portfolio page (show available balance, PnL).
+
+Wallet page:
+
+Dummy wallet showing fake USD, BTC, ETH, etc. balances.
+
+Deposit (add fake funds) and Withdraw (subtract fake funds) buttons.
+
+Profile page:
+
+User settings, 2FA setup.
+
+View trading history and performance.
+
+Login / Register page:
+
+Email login/Google login (basic for now).
+
+Trading Engine (Backend Logic):
+
+Connect to live market price feed:
+
+Use Binance Public API for market data (tickers, order books, candles).
+
+Update prices live via WebSocket (for fast real-time updating without page refresh).
+
+Order Handling (Paper Trading Mode):
+
+User places order (market/limit).
+
+System matches instantly with live prices.
+
+Update wallet balances based on filled orders.
+
+Calculate Unrealized PnL for open positions.
+
+No real crypto transactions happen — purely simulation.
+
+Orders should show proper Status:
+
+Open
+
+Filled
+
+Canceled
+
+Wallet System:
+
+Fake balances (e.g., $100,000 USDT on registration).
+
+Balances update live as user trades.
+
+History of deposits/withdrawals visible.
+
+Admin Features (optional for now):
+
+Reset user balances
+
+Manage demo tokens (e.g., add a demo token like "BRIV Coin")
+
+Tech Stack Suggested:
+
+Frontend: React.js or Next.js
+
+State Management: Redux Toolkit / Zustand (for fast UI updates)
+
+Backend: Node.js + Express
+
+Database: MongoDB (store user orders, balances, history)
+
+WebSocket: For live trading and market updates
+
+APIs:
+
+Binance API for market data (or CoinGecko as backup)
+
+Important:
+
+No fake pages. All menu tabs must be linked to working components.
+
+Realistic, professional look (not amateur).
+
+Home page should welcome user, not directly jump into trading.
+
+404 errors must be avoided completely.
+
+Stretch Goals (Optional if time allows):
+
+Add Futures Demo Trading (long/short with leverage).
+
+Add P2P Demo Trading.
+
+Add simple Leaderboard (Top Demo Traders).

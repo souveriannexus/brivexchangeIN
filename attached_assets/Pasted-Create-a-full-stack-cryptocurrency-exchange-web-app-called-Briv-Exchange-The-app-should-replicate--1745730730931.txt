@@ -1,0 +1,161 @@
+Create a full-stack cryptocurrency exchange web app called Briv Exchange.
+
+The app should replicate all major features of Binance, but designed to be scalable for a startup.
+It should have a modern, minimal, clean UI, preferably dark-themed by default, with a light mode option.
+
+Core Features to Include:
+
+User Accounts and Security:
+
+User Registration (Email, Phone, Google/Apple login options)
+
+Email/Phone verification (OTP system)
+
+2FA Authentication (using apps like Google Authenticator)
+
+Password reset, change email/phone, profile settings
+
+KYC/AML Compliance system (document upload, verification process)
+
+Admin panel to approve/reject KYC
+
+Wallet System:
+
+Crypto wallets for each supported coin/token (auto-generate wallet addresses)
+
+Deposit and Withdrawal system (on-chain, or for testnet purposes)
+
+Transaction history
+
+Fee deduction logic (for withdrawals)
+
+Internal transfer between users (zero-fee transfer)
+
+Trading Features:
+
+Spot Trading Interface
+
+Futures Trading Interface (Perpetual Contracts, leverage selection 1x to 125x)
+
+Margin Trading Interface
+
+P2P Trading (Peer to Peer, escrow system)
+
+Buy/Sell Orders (Market, Limit, Stop-Limit, OCO orders)
+
+Order Book (live updates)
+
+Trading Chart (candlestick charts integrated using TradingView Widget or Recharts/Lightweight Charts)
+
+Trade History
+
+Live Ticker/Market Data
+
+Token Support:
+
+Bitcoin (BTC), Ethereum (ETH), USDT, BNB, XRP, and ability to add more tokens easily
+
+Custom token listing backend for admins
+
+Fees System:
+
+Set Trading Fees (e.g., 0.1% maker/taker fees adjustable from admin panel)
+
+Discount if users hold a native token like "BRIV" token
+
+Native Token:
+
+Create a native utility token ("BRIV") integrated into trading and fee discounts
+
+BRIV staking option for extra benefits
+
+API Access:
+
+Public API for market data (price feeds, order books)
+
+Private API for placing orders, withdrawals (secured with API keys)
+
+Admin Panel:
+
+Manage users, KYC approvals, view trades, view deposits/withdrawals
+
+Set exchange parameters (fees, pairs, margins, leverage limits)
+
+Ban/suspend users
+
+View analytics dashboard (daily volume, active traders, top coins)
+
+Additional Features:
+
+Launchpad for token sales/IEOs
+
+Staking/earn products (fixed and flexible staking)
+
+NFT Marketplace integration (future feature, optional)
+
+News and Announcements section
+
+Referral Program (track invited users, give commission)
+
+Leaderboards (top traders, P2P sellers)
+
+Support ticket system (chat/email)
+
+Notifications (web push, in-app notifications for trades, deposits, etc.)
+
+Security:
+
+Encrypted user data (passwords, personal details)
+
+Session timeouts
+
+Withdrawal whitelist addresses
+
+Anti-phishing codes for email communication
+
+Tech Stack (suggestion for Replit):
+
+Frontend: React.js / Next.js
+
+Backend: Node.js (Express), WebSocket for live trading
+
+Database: MongoDB / PostgreSQL
+
+Authentication: JWT, OAuth
+
+APIs: CoinGecko / Binance API for real-time market data (during early stages)
+
+Hosting: Replit DB initially, scalable to cloud servers (AWS, GCP) later
+
+Design Requirement:
+
+Modern dark UI similar to Binance Pro mode
+
+Responsive (mobile, tablet, desktop)
+
+Fast performance, minimal loading screens
+
+Branding:
+
+Name: Briv Exchange
+
+Native Token: BRIV
+
+Tagline: "Trade Freely. Grow Fearlessly."
+
+Logo should symbolize security, speed, and financial freedom (optional to generate)
+
+Stretch Goals (Optional Additions):
+
+Cross-chain bridge
+
+Lending/Borrowing service
+
+Futures funding rate tracker
+
+Grid trading bots
+
+Copy trading
+
+Prioritize clean code, modular structure, and future scalability.
+App must be easily extendable to add new coins, trading pairs, and services without rewriting core logic.

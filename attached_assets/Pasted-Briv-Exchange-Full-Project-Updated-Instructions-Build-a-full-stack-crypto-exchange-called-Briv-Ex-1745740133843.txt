@@ -1,0 +1,95 @@
+Briv Exchange — Full Project Updated Instructions
+
+Build a full-stack crypto exchange called Briv Exchange.
+
+Must work as a Web App (PC) + Mobile App (responsive).
+
+Should use Single Page Application (SPA) design (React.js or Next.js preferred) so tabs don't throw "404 Page Not Found" errors.
+
+Homepage (Landing Page) should show:
+
+Overview of Briv Exchange (Logo, Tagline, About Us)
+
+Top coins prices (small live market table)
+
+Exchange statistics (like Volume 24h, Active Users, Coins Listed)
+
+Simple registration/login button
+
+Introductory sections (like "Why Trade With Briv", "Security First", "Low Fees", etc.)
+
+Do NOT show the trading page directly on the homepage.
+
+Navigation Tabs (all clickable, no 404 error):
+
+Home
+
+Spot Trading
+
+Futures Trading
+
+Margin Trading
+
+P2P Trading
+
+Wallets
+
+Markets (price list of all coins)
+
+Staking
+
+Launchpad (future)
+
+Support/Help Center
+
+User Dashboard (Profile, Orders, etc.)
+
+Technical Requirements:
+
+Routing: Use React Router / Next.js routing → No broken links (no 404 unless truly missing page).
+
+Responsive: Must work on Mobile + Desktop (with automatic resizing).
+
+TradingView Charts: Use TradingView widget for professional trading charts.
+
+WebSocket Integration: Live price updates without reloading page.
+
+Authentication: Email + Google login + 2FA (later upgradeable to phone OTP).
+
+Style:
+
+Modern, minimalistic, dark-mode UI by default.
+
+Soft animations (page transitions, hover effects).
+
+Big, clear fonts for easy mobile viewing.
+
+Security:
+
+Secure routing
+
+Secure user login
+
+Backend protected by JWT tokens
+
+Mobile App Compatibility (later step):
+
+Build using Responsive WebApp now (works on phone browsers).
+
+In Phase 2, you can wrap it using CapacitorJS / React Native WebView for native app publishing.
+
+Important:
+All tabs must be connected to real or dummy components, NO empty links, NO 404 errors inside app.
+Home page must feel like a professional landing page, not direct trading dashboard.
+
+Example flow:
+
+Open website → See Home/Overview page.
+
+Click on "Spot Trading" → Go to Spot Market page.
+
+Click on "Futures Trading" → Go to Futures Dashboard.
+
+Profile, Settings, Wallet → Must be accessible inside user login area.
+
+Mobile → Menu collapses nicely, all links still work.
